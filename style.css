@@ -1,0 +1,378 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+#top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    background-color:cornsilk ;
+    width: 80%;
+    margin-left: 10%;
+    z-index: 50;
+    top: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    
+}
+#top .logo img{
+      width: 70%;
+    height: 90%; 
+    margin-left: 40%; 
+
+}
+#top nav ul {
+
+text-decoration: none;
+display: flex;
+list-style: none;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-color: none;
+font-size: 15px;
+gap: 15px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+position: relative;
+
+
+
+}    
+#top nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+#top nav ul li a:hover{
+    color:orange;
+    text-decoration: underline;
+
+}
+#top .head {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 8%;
+    gap: 15px;
+    
+}
+
+#top .head li{
+    list-style: none;
+    
+}
+#top .head li a{
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    gap: 20px;
+    
+}
+#top .head li a:hover{
+   color: gray;
+   text-decoration: underline;
+}
+
+/* main section */
+
+#ma  {
+     position: relative;
+    text-align: center;
+    /* position: fixed; */
+     
+}
+
+
+#ma .scroll-container{
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* animation: slide  2s  linear infinite; */
+    
+	
+    
+    /* position: fixed;     */
+}
+
+
+/* #ma .scroll-container::-webkit-scrollbar{
+    display: none;
+} */
+#ma .scroll-container .img1{
+    background-image: url(kalamandir\ img.jpg);
+    flex: none;
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    background-position: center;
+    animation: slide  5s   linear infinite;   
+}
+@keyframes slide{
+    0%{
+        
+        
+        transform: translate3d(0,0,0);
+    }
+    50%{
+        transform: translate3d(0,0,0);
+
+    }
+    70%{
+        transform: translate3d(-1000px,0,0);
+    }
+    100%{
+        transform: translate3d(-3000px,0,0);
+    }
+}
+
+#ma .scroll-container .img2{
+    background-image: url(down1.jpg);
+    flex: none;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    animation: slide  10s  linear infinite;
+    
+}
+
+
+#ma .scroll-container .img3{
+    background-image: url(down2.jpg);
+    flex: none;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    animation: slide  10s linear infinite;
+    
+}
+
+#ma .scroll-container .img1 h1{
+    font-size: 50px;
+    color: white;
+     text-align: right;
+     font-family: "Dancing Script", serif;
+     font-optical-sizing: auto;
+     font-weight: weight;
+     font-style: italic;
+      margin-right: 15%; 
+     margin-top: 15%;
+
+}
+#ma .scroll-container .img1 button{
+    width: 10%;
+    height: 7%;
+    background-color:palevioletred;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 55%;
+    margin-top: 10px;
+
+}
+#ma .scroll-container .img1 button:hover{
+    background-color:orange;
+}
+#ma .scroll-container .img3 h1{
+    font-size: 50px;
+    color: white;
+     text-align: right;
+     font-family: "Dancing Script", serif;
+     font-optical-sizing: auto;
+     font-weight: weight;
+     font-style: italic;
+     margin-right: 15%;
+     margin-top: 15%;
+   
+}
+#ma .scroll-container .img3 button{
+    width: 10%;
+    height: 7%;
+    background-color:palevioletred;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 55%;
+    margin-top: 10px;
+}
+#ma .scroll-container .img3 button:hover{
+    background-color: orange;
+}
+
+/* second section */
+
+#second .all{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+
+    padding: 10px;
+    height: 100vh;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#second .all .item{
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 2px;
+    box-shadow: 0 4px 6px black;
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+#second .all .item:hover{
+    transform: translate(-5px);
+    box-shadow: 0 5px 8px rgba(0,0,0,0.2);
+}
+#second .all .one{
+    background-image: url(back1.jpg);
+    background-size: cover;
+    height: 80%;
+    
+    
+    }
+    #second .all .one h1{
+        margin-top: 20%;
+    }
+
+    
+    #second .all .two{
+        background-image: url(https://kalamandirsarees.com/wp-content/uploads/elementor/thumbs/Chiffon-1-p6mb91vpukxjtl2xudf7zfzyni0uqi5mfe1izlgdmw.jpg);
+        background-size: cover;
+        height: 80%;
+    }
+    #second .all h1{
+        margin-top: 20%;
+    }
+    
+    #second .all .three{
+        background-image: url(https://kalamandirsarees.com/wp-content/uploads/elementor/thumbs/cotton-1-p6mb9c7xxrbpdanx5zw48ve16qlw36ao4t7v9n11qg.jpg);
+        height: 80%;
+    }
+        #second .all .four{
+        background-image: url(https://kalamandirsarees.com/wp-content/uploads/elementor/thumbs/embriodary-1-p6mb9lmbu3oklea9n3ydxt0n4lbk85bzi3qq2en408.jpg);
+        height: 80%;
+    }
+    
+    #second .all .five{
+        background-image: url(https://kalamandirsarees.com/wp-content/uploads/elementor/thumbs/Linan-p6m4zzexeotvuw083334y8mm23cvnkne5ek26f5zig.jpg);
+         height: 80%;
+    }
+    #second .all .six{
+      background-image: url(https://kalamandirsarees.com/wp-content/uploads/elementor/thumbs/Georgette-1-p6mb9v0pqg1fthwm480nmqn92g18d4dave9kv696a0.jpg);
+      height: 80%;
+    }
+    #second .all .saven{
+        background-image: url(https://kalamandirsarees.com/wp-content/uploads/elementor/thumbs/Irkali-1-p6mb7756dce6x9rvo2kpkeu8h55sjzsoi7q1wy7bwo.jpg);
+        height: 80%;
+    }
+    #second .all .eight{
+        background-image: url(https://kalamandirsarees.com/wp-content/uploads/elementor/thumbs/Kanjivaram-1-p6mb7tpaxd92nwv40cbr895aqe2loqa8lbdpfl9vrc.jpg);
+        height: 80%;
+    }
+    #second .all .nine{
+        background-image: url(https://kalamandirsarees.com/wp-content/uploads/elementor/thumbs/Chiffon-1-p6mb91vpukxjtl2xudf7zfzyni0uqi5mfe1izlgdmw.jpg);
+        height: 80%;
+        
+    }
+    #second .all .ten{
+        background-image: url(https://kalamandirsarees.com/wp-content/uploads/elementor/thumbs/Paithani-p6mceqzz100guuihcwaf3f73bui174oyhrvyehmnm0.jpg);
+        height: 80%;
+    }
+    #second .all .eleven{
+        background-image: url(https://kalamandirsarees.com/wp-content/uploads/elementor/thumbs/Pure-khadi-silk-p6mck7g8pdhe9cl4hr7g2jmfhdlqvvcuws8fpbjdhk.jpg);
+        height: 80%;
+    }
+    #second .all .twelve{
+        background-image: url(https://kalamandirsarees.com/wp-content/uploads/elementor/thumbs/Upda-p6mckeyy81rou8a79uggmhq48gkolg6pltgbjj883s.jpg);
+        height: 80%;
+    }
+
+/* third section */
+
+#sec1 .sec2 .sec3{
+    display: flex;
+    margin-top: 30px;
+
+}
+#sec1 .sec2 .exclu{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+#sec1 .sec2 .sec3 div{
+    width: 300px;
+    height: 70vh;
+    /* margin-left: 65px; */
+    /* gap: 10px; */
+    border: 1px solid grey;
+}
+#sec1 .sec2 .sec3 {
+    margin-left: 10%;
+}
+#sec1 .sec2 .sec3 div img{
+    margin-left: 25px;
+    margin-top: 15px;    
+
+}
+#sec1 .sec2 .sec3 div .ar{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color:black;
+}
+#sec1 .sec2 .sec3 div .ar:hover{
+    color: gray;
+}
+#sec1 .sec2 .sec3 div .ar1{
+ color: orange;
+ text-align: center;
+}
+/* four section */
+
+#section4 .sect4{
+    width: 100%;
+    background-image: url(https://image.slidesdocs.com/responsive-images/background/nature-pink-watercolor-water-pink-pastel-cloud-powerpoint-background_580fe2c3e5__960_540.jpg);
+    background-size: cover;
+    height: 80vh;
+    display:flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+
+}
+#section4 .sect4::-webkit-scrollbar{
+    display: none;
+}
+#section4 .sect4 .sect5{
+    width: 100%;
+    padding-left: 10%;
+    animation: slide  10s  linear infinite;
+    
+}
+#section4 .sect4 .sect6{
+    width: 90%;
+    padding-left: 10%;
+    animation: slide  10s  linear infinite;
+}
+#section4 .sect4 .sect7{
+    width: 100%;
+    padding-left: 20%;
+    margin-right: 10%;
+    animation: slide  10s  linear infinite;
+}
