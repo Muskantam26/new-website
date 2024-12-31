@@ -114,13 +114,16 @@ position: relative;
     height: 100%;
     background-size:cover;
     background-position: center;
-    animation: slide  5s   linear infinite;   
+    animation: slide  10s   linear infinite;   
 }
 @keyframes slide{
     0%{
         
         
         transform: translate3d(0,0,0);
+    }
+    25%{
+        transform: translate3d(-1000,0,0); 
     }
     50%{
         transform: translate3d(0,0,0);
@@ -375,4 +378,70 @@ position: relative;
     padding-left: 20%;
     margin-right: 10%;
     animation: slide  10s  linear infinite;
+}
+
+/* section five */
+#mb .mb1 .mb2{
+    display: flex;
+    margin-left: 8%;
+}
+#mb .mb1 .best{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 40px;
+
+}
+#mb .mb1 .mb2 div{
+    width: 250px;
+    height: 60vh;
+    border: 1px solid grey;
+    
+}
+#mb .mb1 .mb2 div img{
+    margin-left: 25px;
+    margin-top: 15px; 
+}
+#mb .mb1 .mb2 div .a{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+    color:black;
+
+} 
+#mb .mb1 .mb2 div .a:hover{
+    color: gray;
+}
+#mb .mb1 .mb2 div .a1{
+    color: orange;
+ text-align: center;
+}
+#mb .mb1 .mb2 button {
+     background-color:palevioletred;
+     font-family: 18px;
+     color: white;
+     width: 50px;
+     height: 50px;
+     font-weight: bold;
+     border-radius: 50%;
+     
+}
+/* section 6 */
+#section6 .sectionC6{
+    display: flex;
+    border: 1px solid black;
+    width: 70%;
+    height: 80vh;
+    margin-left: 15%;
+}
+#section6 .sectionC6 .mindiv{
+    border: 1px solid black;
+    display: flex;
+    width: 50%;
+}
+#section6 .sectionC6 .image{
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    height: 80vh;
 }
