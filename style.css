@@ -445,3 +445,14 @@ position: relative;
     scroll-behavior: smooth;
     height: 80vh;
 }
+
+/* section saven */
+
+#section7 .sectionC7 .sectionC77{
+    width: 60%;
+    height: 80vh;
+     margin-left: 18%;
+}
+
+
+@media(max-width)
