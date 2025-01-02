@@ -95,7 +95,7 @@ position: relative;
     scroll-behavior: smooth;
     height: 100vh;
     width: 100%;
-    position: relative;
+    /* position: relative; */
     /* animation: slide  2s  linear infinite; */
     
 	
@@ -497,13 +497,31 @@ position: relative;
 
 @media(max-width: 470px){
     
-    #bars{
+     #bars{
         display: block;
-        position: absolute;
-        top: 10%;
-        right:10%; 
-        font-size: 40px;
+        font-size: 30px;
+        color: black;
+     } 
+     #top  nav ul{
+        display: none;
+    } 
+    #top .head {
+        display: none;
     }
+    #top{
+        position: absolute;
+        top: 0%;
+        padding-left: 0%;
+        margin-left: 0%;
+        width: 65%;
+        height: 8%;
+
+    }
+    #top .logo {
+        width: 100px;
+        margin-left: 24%;
+    }
+    
     
     
 }
