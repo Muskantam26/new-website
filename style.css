@@ -461,13 +461,13 @@ position: relative;
 /* section 6 */
 #section6 .sectionC6{
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 70%;
     height: 80vh;
     margin-left: 15%;
 }
 #section6 .sectionC6 .mindiv{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     width: 50%;
 }
@@ -493,14 +493,18 @@ position: relative;
     display: none;
   } 
   
+  #top .ic{
+    display: none;
+  }
 
 
 @media(max-width: 470px){
     
      #bars{
         display: block;
-        font-size: 30px;
+        font-size: 15px;
         color: black;
+        margin-left: 20px;
      } 
      #top  nav ul{
         display: none;
@@ -513,17 +517,153 @@ position: relative;
         top: 0%;
         padding-left: 0%;
         margin-left: 0%;
-        width: 65%;
-        height: 8%;
+        width: 100%;
+        height: 15%;
 
     }
     #top .logo {
-        width: 100px;
-        margin-left: 24%;
+        /* width: 90px; */
+         margin-right: 70px; 
+        /* height: 30%; */
     }
     
-    
-    
+    #top .ic{
+        display: block;
+        
+        
+    }
+
+    #inp:checked~#top nav ul{
+        display:block;
+        /* position: absolute;  */
+          /* top: 10%;   */
+         /* left: 63%;  */
+        
+        /* padding: 20px; */
+        border-radius: 10px;
+        line-height: 40px;
+        background-color:black; 
+       }
+      
+
+    #top .ic li a {
+        color: black;
+        margin-right: 5%;
+    }
+    #ma .scroll-container{
+        width: 100%;
+    }
+    #ma .scroll-container .img1{
+        animation: none;
+    }
+    #ma .scroll-container .img2{
+        animation: none;
+    }
+    #ma .scroll-container .img3{
+        animation: none;
+    }
+    #ma .scroll-container .img1 button{
+        width: 20%;
+        margin-top: 20%;
+    }
+    #ma .scroll-container .img1 h1{
+        font-size: 25px;
+        margin-top: 30%;
+    }
+    #ma .scroll-container .img3 button{
+        width: 20%;
+        margin-top: 20%;
+    }
+    #ma .scroll-container .img3 h1{
+        font-size: 25px;
+        margin-top: 30%;
+    }
+    #ma .scroll-container .img2 img{
+        height: 50vh;
+        margin-top: 10%;
+    }
+
+    #second .all{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 120vh;
+        
+    }
+    #second .all .item{
+        font-size: 10px;
+    }
+    #sec1 .sec2 .sec3{
+        display: block;
+    }
+    #sec1 .sec2 .sec3 div{
+        height: 80vh;
+        
+    }
+   #section4 .sect4{
+    width: 100%;
+   }
+   #section4 .sect4 .sect5{
+    /* padding-left: 0%; */
+   }
+   #section4 .sect4 .sect5 {
+     /* margin-left: 20%; */
+     animation: none;
+   }
+   #section4 .sect4 .sect6{
+    /* padding-left: 0%; */
+   }
+   
+   
+   #section4 .sect4 .sect6 {
+    animation: none;
+   }
+   #section4 .sect4 .sect7{
+    /* padding-left: 0%; */
+    /* margin-left: 0%; */
+   }
+   #section4 .sect4 .sect7 {
+    animation: none;
+    width: 40%;
+    height: 70vh;
+   }
+    #mb .mb1 .mb2{
+       overflow-x: scroll;
+       scroll-behavior: smooth; 
+    }
+    #mb .mb1 .mb2 div{
+        height: 65vh;
+    }
+    #section6 .sectionC6 {
+        display: block;
+        height: 140vh;
+    }
+    #section6 .sectionC6{
+        width: 80%;
+    }
+    #section6 .sectionC6 .mindiv{
+        width: 100%;
+    }
+    #section6 .sectionC6 .image{
+        width: 100%;
+    }
+    #section6 .sectionC6 .imag img {
+        width: 100%;
+    }
+    #section7 .sectionC7{
+        width: 100%;
+        height: 50vh;
+    }
+    #section7 .sectionC7 .sectionC77{
+        width: 80%;
+    }
+    #section7 .sectionC7 .sectionC77 iframe{
+        width: 90%;
+        height: 40vh;
+    }
+    #section8 .icon1 img {
+        height: 40vh;
+    }
+
 }
 
 
